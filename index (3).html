@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Personal Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: goldenrod;
+      font-family: Arial, 'Times New Roman', serif;
+      color: black;
+      border: 30px ridge black;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header, h1, h2, h4, h5 {
+      text-align: center;
+    }
+
+    nav {
+      background-color: black;
+      text-align: center;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav button {
+      background-color: darkred;
+      color: white;
+      border: none;
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background-color: crimson;
+      transform: scale(1.1);
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    img {
+      margin: 5px;
+      border-radius: 10px;
+    }
+
+    /* Rocket button */
+    #scrollBtn {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+
+    #scrollBtn:hover {
+      background-color: darkred;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 🔝 Navigation Bar -->
+  <nav>
+    <button onclick="scrollToSection('home')">🏠 Home</button>
+    <button onclick="scrollToSection('outputs')">📁 Outputs</button>
+    <button onclick="scrollToSection('contacts')">📞 Contacts</button>
+  </nav>
+
+  <!-- 🏠 HOME SECTION -->
+  <section id="home">
+    <header>
+      <h1>MY PERSONAL PORTFOLIO</h1>
+    </header>
+
+    <div class="center">
+      <p>Hello! Welcome to my portfolio.</p>
+      <img src="/j/Profile.jpg" alt="Me" width="150">
+      <p>I'm <b>Johnjay C. Arroyo</b>, a BSIT student at Central Philippine State University, Moises Padilla Campus.</p>
+    </div>
+
+    <h2>Photoshop Edits</h2>
+    <div class="center">
+      <img src="/j/Mylayout.jpg" width="200">
+      <img src="/j/chessboard.jpg" width="200">
+      <img src="/j/product.jpg" width="200">
+    </div>
+
+    <h2>ROTC Albums & Videos</h2>
+    <p><b>Albums:</b></p>
+    <div class="center">
+      <img src="/j/Videos /rotcbuddies.jpg" width="180">
+      <img src="/j/Videos /3.jpg" width="180">
+     <img src="/j/Videos /7.jpg" width="180">
+      <img src="/j/Videos /8.jpg" width="180">
+      <img src="/j/Videos /5.jpg" width="180">
+      <h5>These pictures are during my ROTC reporting in the year 2025.</h5>
+    </div>
+
+    <p><b>Videos:</b></p>
+    <div class="center">
+      <video width="300" height="200" controls src="/j/CPSU-MPC ROTCU Jogging.mp4"></video>
+      <video width="300" height="200" controls src="/j/rifle cadets.mp4"></video>
+      <video width="300" height="200" controls src="/j/soloplay.mp4"></video>
+    </div>
+  </section>
+
+  <!-- 📁 OUTPUTS SECTION -->
+  <section id="outputs">
+    <h2>Outputs</h2>
+    <ol>
+      <li><a href="https://www.canva.com/design/DAGxH_WFog0/VnItq552-ukXItjuX-fqEQ/edit">Canva Portfolio</a></li>
+      <li><a href="https://www.figma.com/design/mhrkeps52gPnvCd0gBN2CL/Arroyo_Figma_Portfolio?m=auto&t=vTLX3MWzTz6KnFDa-6">Figma Portfolio</a></li>
+      <li><a href="https://www.canva.com/design/DAGx3T3vF0w/69eUztiBK6zYe69glRykkw/edit?utm_content=DAGx3T3vF0w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">3AI's Canva Presentation</a></li>
+      <li><a href="https://www.figma.com/design/QA3ZJJy37BVjh8DcQ1xObM/Arroyo_e-commerce?m=auto&t=ArMMSJ6qZf8QOxFD-6">Figma E-commerce Website</a></li>
+    </ol>
+  </section>
+
+  <!-- 📞 CONTACTS SECTION -->
+  <section id="contacts">
+    <h2>Contacts</h2>
+    <p>
+      <a href="https://www.facebook.com/johnjay.c.arroyo">
+        <img src="/j/Fb.png" width="30"> Facebook: Johnjay C. Arroyo
+      </a><br>
+      <a href="mailto:arroyojohnjay@gmail.com">
+        <img src="/j/Gmail.png" width="30"> Email: arroyojohnjay@gmail.com
+      </a><br>
+      <a href="#">
+        <img src="/j/phone.png" width="30"> Phone: 09939817955
+      </a><br>
+      <a href="#">
+        <img src="/j/tiktok.png" width="30"> TikTok: 20jjay06
+      </a>
+    </p>
+
+    <h2>Personal Information</h2>
+    <pre style="font-size:1.1em;">
+<b>Name:</b> Johnjay C. Arroyo
+<b>Age:</b> 19
+<b>Address:</b> Brgy. Odiong, Moises Padilla,
+Negros Occidental
+    </pre>
+
+    <div class="center">
+      <h4>Leave your message here</h4>
+      <form>
+        <textarea placeholder="Write your message here..." rows="4" cols="40"></textarea><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 🚀 Rocket Scroll-Up Button -->
+  <button id="scrollBtn" title="Go to top">🚀</button>
+
+  <script>
+    // Scroll to sections
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Scroll-to-top rocket
+    document.getElementById("scrollBtn").addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
